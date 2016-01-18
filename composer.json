@@ -1,0 +1,23 @@
+{
+  "name": "provider/iana",
+  "description": "IANA data provider for Porter.",
+  "authors": [
+    {
+      "name": "Bilge",
+      "email": "bilge@scriptfusion.com"
+    }
+  ],
+  "require": {
+    "scriptfusion/porter": "dev-master",
+    "league/csv": "^8",
+    "symfony/dom-crawler": "^3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4"
+  },
+  "autoload": {
+    "psr-4": {
+      "ScriptFUSION\\Porter\\Provider\\Iana\\": "src"
+    }
+  }
+}
