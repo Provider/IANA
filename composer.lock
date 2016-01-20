@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9c9042bfceffc9884557435a4d16b5de",
+    "hash": "ae6f841db5e058a794b9fb6b568d902d",
     "content-hash": "337f3dbeefc281bf5048e7157439f7d5",
     "packages": [
         {
@@ -70,18 +70,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ScriptFUSION/Porter.git",
-                "reference": "cd96eece84b338203e94e39ee9377e9786fdac4f"
+                "reference": "26520f71296571c6cab329dceeb62ce44a588e2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ScriptFUSION/Porter/zipball/cd96eece84b338203e94e39ee9377e9786fdac4f",
-                "reference": "cd96eece84b338203e94e39ee9377e9786fdac4f",
+                "url": "https://api.github.com/repos/ScriptFUSION/Porter/zipball/26520f71296571c6cab329dceeb62ce44a588e2f",
+                "reference": "26520f71296571c6cab329dceeb62ce44a588e2f",
                 "shasum": ""
             },
             "require": {
-                "league/csv": "^8",
-                "php": ">=5.5",
-                "symfony/dom-crawler": "^3"
+                "php": ">=5.5"
             },
             "require-dev": {
                 "mockery/mockery": "^0",
@@ -101,7 +99,7 @@
                 }
             ],
             "description": "Data import abstraction library.",
-            "time": "2016-01-18 00:42:51"
+            "time": "2016-01-19 23:43:52"
         },
         {
             "name": "symfony/dom-crawler",
