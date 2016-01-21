@@ -19,5 +19,10 @@
     "psr-4": {
       "ScriptFUSION\\Porter\\Provider\\Iana\\": "src"
     }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ScriptFUSIONTest\\Porter\\Provider\\Iana\\": "test"
+    }
   }
 }

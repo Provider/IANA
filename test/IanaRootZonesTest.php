@@ -1,24 +1,16 @@
 <?php
 namespace ScriptFUSIONTest\Porter\Provider\Iana;
 
+use ScriptFUSION\Porter\Collection\CountableProviderRecords;
 use ScriptFUSION\Porter\ImportSpecification;
-use ScriptFUSION\Porter\Porter;
-use ScriptFUSION\Porter\Provider\Iana\IanaProvider;
 use ScriptFUSION\Porter\Provider\Iana\IanaRootZones;
 
-final class IanaRootZonesTest extends \PHPUnit_Framework_TestCase
+final class IanaRootZonesTest extends IanaTest
 {
-    /** @var Porter */
-    private $porter;
-
-    protected function setUp()
-    {
-        $this->porter = (new Porter)->addProvider(new IanaProvider);
-    }
-
     public function testRootZones()
     {
         $records = $this->porter->import(new ImportSpecification(new IanaRootZones));
+        $this->assertInstanceOf(CountableProviderRecords::class, $records);
 
         $i = 0;
         foreach ($records as $record) {

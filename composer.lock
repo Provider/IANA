@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ae6f841db5e058a794b9fb6b568d902d",
+    "hash": "af758e387bf775775980ac59eca454fb",
     "content-hash": "337f3dbeefc281bf5048e7157439f7d5",
     "packages": [
         {
@@ -70,12 +70,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ScriptFUSION/Porter.git",
-                "reference": "26520f71296571c6cab329dceeb62ce44a588e2f"
+                "reference": "0cf5305177a7042f9ac62ca883deb2859ab3696e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ScriptFUSION/Porter/zipball/26520f71296571c6cab329dceeb62ce44a588e2f",
-                "reference": "26520f71296571c6cab329dceeb62ce44a588e2f",
+                "url": "https://api.github.com/repos/ScriptFUSION/Porter/zipball/0cf5305177a7042f9ac62ca883deb2859ab3696e",
+                "reference": "0cf5305177a7042f9ac62ca883deb2859ab3696e",
                 "shasum": ""
             },
             "require": {
@@ -99,7 +99,7 @@
                 }
             ],
             "description": "Data import abstraction library.",
-            "time": "2016-01-19 23:43:52"
+            "time": "2016-01-21 00:33:26"
         },
         {
             "name": "symfony/dom-crawler",
