@@ -1,11 +1,11 @@
 <?php
-namespace ScriptFUSION\Porter\Provider\Iana;
+namespace ScriptFUSION\Porter\Provider\Iana\Provider;
 
 use ScriptFUSION\Porter\Connector\Connector;
-use ScriptFUSION\Porter\Connector\HttpConnector;
-use ScriptFUSION\Porter\Provider\Provider;
+use ScriptFUSION\Porter\Net\Http\HttpConnector;
+use ScriptFUSION\Porter\Provider\AbstractProvider;
 
-class IanaProvider extends Provider
+final class IanaProvider extends AbstractProvider
 {
     public function __construct(Connector $connector = null)
     {

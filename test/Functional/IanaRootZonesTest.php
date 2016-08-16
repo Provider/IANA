@@ -1,21 +1,19 @@
 <?php
-namespace ScriptFUSIONTest\Porter\Provider\Iana;
+namespace ScriptFUSIONTest\Porter\Provider\Iana\Functional;
 
-use ScriptFUSION\Porter\Collection\CountableProviderRecords;
-use ScriptFUSION\Porter\ImportSpecification;
-use ScriptFUSION\Porter\Provider\Iana\IanaRootZones;
+use ScriptFUSION\Porter\Provider\Iana\Provider\Resource\IanaRootZones;
+use ScriptFUSION\Porter\Specification\ImportSpecification;
 
 final class IanaRootZonesTest extends IanaTest
 {
     public function testRootZones()
     {
         $records = $this->porter->import(new ImportSpecification(new IanaRootZones));
-        $this->assertInstanceOf(CountableProviderRecords::class, $records);
 
-        $i = 0;
+        $counter = 0;
         foreach ($records as $record) {
-            $this->assertContains('.', $record['Domain']);
-            $this->assertContains(
+            self::assertContains('.', $record['Domain']);
+            self::assertContains(
                 $record['Type'],
                 [
                     // TODO: Create enumeration.
@@ -27,11 +25,11 @@ final class IanaRootZonesTest extends IanaTest
                     'test',
                 ]
             );
-            $this->assertNotEmpty($record['Sponsoring Organisation']);
+            self::assertNotEmpty($record['Sponsoring Organisation']);
 
-            ++$i;
+            ++$counter;
         }
 
-        $this->assertCount($i, $records);
+        self::assertCount($counter, $records);
     }
 }

@@ -8,7 +8,7 @@
     }
   ],
   "require": {
-    "scriptfusion/porter": "dev-master",
+    "scriptfusion/porter": "^0.7",
     "league/csv": "^8",
     "symfony/dom-crawler": "^3"
   },

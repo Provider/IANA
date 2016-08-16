@@ -1,13 +1,14 @@
 <?php
-namespace ScriptFUSION\Porter\Provider\Iana;
+namespace ScriptFUSION\Porter\Provider\Iana\Provider\Resource;
 
 use League\Csv\Reader;
 use ScriptFUSION\Porter\Connector\Connector;
-use ScriptFUSION\Porter\Provider\ProviderData;
+use ScriptFUSION\Porter\Provider\Iana\Provider\IanaProvider;
+use ScriptFUSION\Porter\Provider\Resource\AbstractResource;
 
-class IanaPortNumbers implements ProviderData
+class IanaPortNumbers extends AbstractResource
 {
-    public function getProviderName()
+    public function getProviderClassName()
     {
         return IanaProvider::class;
     }
