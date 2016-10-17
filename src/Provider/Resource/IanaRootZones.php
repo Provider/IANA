@@ -3,6 +3,7 @@ namespace ScriptFUSION\Porter\Provider\Iana\Provider\Resource;
 
 use ScriptFUSION\Porter\Collection\CountableProviderRecords;
 use ScriptFUSION\Porter\Connector\Connector;
+use ScriptFUSION\Porter\Options\EncapsulatedOptions;
 use ScriptFUSION\Porter\Provider\Iana\Provider\IanaProvider;
 use ScriptFUSION\Porter\Provider\Resource\AbstractResource;
 use Symfony\Component\DomCrawler\Crawler;
@@ -14,7 +15,7 @@ class IanaRootZones extends AbstractResource
         return IanaProvider::class;
     }
 
-    public function fetch(Connector $connector)
+    public function fetch(Connector $connector, EncapsulatedOptions $options = null)
     {
         $html = $connector->fetch('http://www.iana.org/domains/root/db');
 
