@@ -25,7 +25,7 @@ final class IanaRootZonesTest extends IanaTest
                     'test',
                 ]
             );
-            self::assertNotEmpty($record['Sponsoring Organisation']);
+            self::assertNotEmpty($record['TLD Manager']);
 
             ++$counter;
         }
