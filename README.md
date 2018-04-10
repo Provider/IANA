@@ -9,10 +9,10 @@ IANA Provider
 
 Provides [Internet Assigned Numbers Authority (IANA) ](http://iana.org) data for [Porter][Porter].
 
-The following data is currently available.
+The following resources are currently available.
 
- - DNS root zones (assignments of ccTLDs and gTLDs).
- - Transport protocol port number and service name registry.
+ - `IanaRootZones` &ndash; DNS root zones (assignments of ccTLDs and gTLDs).
+ - `IanaPortNumbers` &ndash; Transport protocol port number and service name registry.
 
 Requirements
 ------------
