@@ -1,4 +1,6 @@
 <?php
+declare(strict_types=1);
+
 namespace ScriptFUSIONTest\Porter\Provider\Iana\Functional;
 
 use ScriptFUSION\Porter\Provider\Iana\Provider\Resource\IanaRootZones;
@@ -6,7 +8,7 @@ use ScriptFUSION\Porter\Specification\ImportSpecification;
 
 final class IanaRootZonesTest extends IanaTest
 {
-    public function testRootZones()
+    public function testRootZones(): void
     {
         $records = $this->porter->import(new ImportSpecification(new IanaRootZones));
 

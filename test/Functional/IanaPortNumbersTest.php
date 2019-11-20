@@ -1,4 +1,6 @@
 <?php
+declare(strict_types=1);
+
 namespace ScriptFUSIONTest\Porter\Provider\Iana\Functional;
 
 use ScriptFUSION\Porter\Provider\Iana\Provider\Resource\IanaPortNumbers;
@@ -6,7 +8,7 @@ use ScriptFUSION\Porter\Specification\ImportSpecification;
 
 final class IanaPortNumbersTest extends IanaTest
 {
-    public function test()
+    public function test(): void
     {
         $records = $this->porter->import(new ImportSpecification(new IanaPortNumbers));
 
