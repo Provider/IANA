@@ -8,7 +8,7 @@ use ScriptFUSION\Porter\Specification\ImportSpecification;
 
 final class IanaPortNumbersTest extends IanaTest
 {
-    public function test(): void
+    public function testPortNumbers(): void
     {
         $records = $this->porter->import(new ImportSpecification(new IanaPortNumbers));
 
